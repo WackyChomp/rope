@@ -1,9 +1,15 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@plugin 'tailwindcss-animate';
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --bg-pattern-one: url('/pattern.svg');
+  --bg-pattern-two: url('https://media.tenor.com/eqsvEtsUXlMAAAAi/stalzone-stalfos.gif');
+
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -119,4 +125,17 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@layer components{
+  .auth_layout{
+    @apply flex items-center justify-center mx-auto max-w-7xl min-h-screen max-sm:px-5 max-sm:py-10;
+  }
+}
+
+@utility pattern-one{
+  @apply bg-[url('/pattern.svg')] bg-top bg-no-repeat;
+}
+@utility pattern-two{
+  @apply bg-[url('https://media.tenor.com/eqsvEtsUXlMAAAAi/stalzone-stalfos.gif')] bg-top bg-no-repeat;
 }
