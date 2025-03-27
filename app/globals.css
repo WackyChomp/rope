@@ -131,6 +131,27 @@
   .auth_layout{
     @apply flex items-center justify-center mx-auto max-w-7xl min-h-screen max-sm:px-5 max-sm:py-10;
   }
+
+  .card_border{
+    @apply bg-red-600 p-1 rounded-2xl w-fit;
+  }
+  .card{
+    @apply bg-green-500 rounded-2xl min-h-full;
+  }
+
+  .form{
+    @apply w-full;
+
+    .btn{
+      @apply !w-full !bg-pink-500 !text-red-500 hover:!bg-pink-500/80 !rounded-full !min-h-10 !font-bold !px-8 cursor-pointer;
+    }
+    .input{
+      @apply !bg-orange-500 !rounded-full !min-h-12 !px-6 placeholder:!text-green-500;
+    }
+    .label{
+      @apply !text-yellow-500 !font-normal;
+    }
+  }
 }
 
 @utility pattern-one{
