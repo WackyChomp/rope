@@ -1,4 +1,5 @@
 import React from 'react'
+import { Control, Controller, FieldValues, Path } from 'react-hook-form'
 import {
   FormControl,
   FormDescription,
@@ -8,23 +9,32 @@ import {
 } from "@/components/ui/form"
 import { Input } from './ui/input'
 
-const FormField = () => (
-  <FormField
-  control={form.control}
-  name="username"
-  render={({ field }) => (
-    <FormItem>
-      <FormLabel>Username</FormLabel>
-      <FormControl>
-        <Input placeholder="shadcn" {...field} className='border border-amber-500' />
-      </FormControl>
-      <FormDescription>
-        This is your public display name.
-      </FormDescription>
-      <FormMessage />
-    </FormItem>
-  )}
-/>  
+interface FormFieldProps<T extends FieldValues>{
+  control: Control<T>;
+  name: Path<T>;
+  label: string;
+  placeholder?: string;
+  description?: string;
+  type?: 'text' | 'email' | 'password' | 'file'
+}
+
+const FormField = ({ control, label, name, placeholder, description, type='text' } : FormFieldProps<T>) => (
+  <Controller 
+    control={control} 
+    name={name} 
+    render={( { field } ) => (
+      <FormItem>
+        <FormLabel className='label'>{label}</FormLabel>
+        <FormControl>
+          <Input placeholder={placeholder} {...field} className='border-7 border-red-500 input' />
+        </FormControl>
+        <FormDescription className='ml-10'>
+          {description}
+        </FormDescription>
+        <FormMessage />
+      </FormItem>
+    )}
+  />  
 )
 
 

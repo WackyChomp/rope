@@ -9,6 +9,7 @@ import { useForm } from "react-hook-form"
 
 import { Button } from "@/components/ui/button"
 import { Form } from "@/components/ui/form"
+import FormField from './FormField'
 
 
 const authFormSchema = (type : FormType) => {
@@ -67,13 +68,35 @@ const AuthForm = ({ type }: { type: FormType }) => {
           <h2 className="ml-10 text-indigo-500 bg-indigo-900 p-1.5 rounded-md">Rope</h2>
         </div>
 
-        <h3>Refine your expertise with an online AI Agent</h3>
+        <h3 className='bg-indigo-900 p-3 rounded-md text-4xl flex justify-center'>Refine your expertise with an online AI Agent</h3>
 
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="w-full space-y-8 form p-4 mt-2 bg-blue-900">
-            {!isSignIn && <p>Name</p>}
-            <p>Email</p>
-            <p>Password</p>
+            {!isSignIn && (
+              <FormField
+                control={form.control}
+                name='name'
+                label='Name'
+                placeholder='Name Goes Here'
+                description='Preferrably your real name - Ex: Andrew | Bobby | Colt'
+              />
+            )}
+              <FormField
+                control={form.control}
+                name='email'
+                label='Email'
+                placeholder='Email Goes Here'
+                type='email'
+                description='Reliable e-mail address to recieve newsletter and updates'
+              />
+              <FormField
+                control={form.control}
+                name='password'
+                label='Password'
+                placeholder='Password Goes Here'
+                description='Shhh... secret credential that you can reliably access without others knowing'
+              />
+
             <Button type="submit" className='btn'>{isSignIn ? 'Sign in' : 'Create an Account'}</Button>
           </form>
         </Form>

@@ -146,7 +146,7 @@
       @apply !w-full !bg-pink-500 !text-red-500 hover:!bg-pink-500/80 !rounded-full !min-h-10 !font-bold !px-8 cursor-pointer;
     }
     .input{
-      @apply !bg-orange-500 !rounded-full !min-h-12 !px-6 placeholder:!text-green-500;
+      @apply !bg-orange-950 !rounded-full !min-h-12 !px-6 placeholder:!text-green-500;
     }
     .label{
       @apply !text-yellow-500 !font-normal;
