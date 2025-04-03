@@ -3,6 +3,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import { Button } from '@/components/ui/button'
+import InterviewCard from '@/components/InterviewCard'
+
+import { dummyInterviews } from '@/constants'
 
 const page = () => {
   const img = `https://media.tenor.com/ZFoOuUSqPBEAAAAi/stalzone-meme.gif`;
@@ -30,7 +33,12 @@ const page = () => {
 
       <section className="flex flex-col gap-7 mt-8">
         <h2>Your Interviews</h2>
-        <div className="interviews-section">You haven&apos;t done any interviews</div>
+        <div className="interviews-section">
+        {dummyInterviews.map((interview) => (
+          <InterviewCard {...interview} key={interview.id} />
+        ))}
+        {/*You haven&apos;t done any interviews*/}
+        </div>
       </section>
 
       <section className="flex flex-col gap-7 mt-8">
