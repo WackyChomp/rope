@@ -171,6 +171,12 @@
   .card{
     @apply bg-green-500 rounded-2xl min-h-full;
   }
+  .card_border{ 
+    @apply border_gradient p-0.5 rounded-2xl w-fit;
+  }
+  .card_interview{ 
+    @apply dark_gradient rounded-2xl min-h-full flex flex-col justify-between gap-10 p-6 relative overflow-hidden;
+  }
 
   .btn_primary{
     @apply w-fit !bg-primary-200 !text-dark-100 hover:bg-primary-200/90 !rounded-full !font-bold px-6 cursor-pointer min-h-10;
@@ -196,7 +202,7 @@
 
 
   .interviews-section{
-    @apply bg-amber-900 flex flex-wrap gap-4 max-lg:flex-col w-full items-stretch;
+    @apply bg-amber-900 p-5 flex flex-wrap gap-4 rounded-2xl max-lg:flex-col w-full items-stretch;
   }
 }
 
@@ -219,4 +225,7 @@
 
 @utility indigo_gradient {
   @apply bg-gradient-to-b from-[#4a3d65] to-[#2e1b62];
+}
+@utility border_gradient {
+  @apply bg-gradient-to-b from-[#4B4D4F] to-[#4B4D4F33];
 }

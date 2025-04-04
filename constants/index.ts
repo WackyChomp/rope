@@ -7,6 +7,17 @@ interface InterviewCardProps{
   createdAt?: string,
 }
 
+export const interviewCovers = [
+  'https://img.icons8.com/ios-filled/200/amazon.png',
+  'https://img.icons8.com/ios-filled/200/ebay.png',
+  'https://img.icons8.com/ios-filled/200/github.png',
+  'https://img.icons8.com/ios-filled/200/google.png',
+  'https://img.icons8.com/ios-filled/200/facebook-new.png',
+  'https://img.icons8.com/ios-filled/200/linkedin.png',
+  'https://img.icons8.com/ios-filled/200/meta.png',
+  'https://img.icons8.com/ios-filled/200/netflix.png',
+]
+
 export const dummyInterviews: Interview[] = [
   {
     id: "1",
