@@ -206,6 +206,10 @@
   }
 }
 
+.hover_tech_tooltip{
+  @apply text-green-500 bg-gray-900 absolute bottom-full mb-2 hidden group-hover:flex px-3 py-2 text-xs;
+}
+
 /* --------------------------------------------------------- */
 
 @utility pattern-one{
