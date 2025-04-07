@@ -8,7 +8,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 /* --------------------------------------------------------- */
-const normalizeTechName = async (tech: string) => {
+const normalizeTechName = (tech: string) => {
   const key = tech.toLowerCase().replace(/\.js$/, "").replace(/\s+/g, "");
   return mappings[key as keyof typeof mappings];
 };
