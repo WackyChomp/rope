@@ -11,7 +11,7 @@ const DisplayTechIcons = async ({ techStack } : TechIconProps) => {
       {/* {techStack} */}
 
       {techIcons.slice(0, 3).map(({ tech, url }, index) => (
-        <div className="relative group bg-red-500 rounded-full p-1 flex-center">
+        <div key={tech} className="relative group bg-red-500 rounded-full p-1 flex-center">
           <span className='hover_tech_tooltip'>{tech}</span>
           <Image 
             src={url}
