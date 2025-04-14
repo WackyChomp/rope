@@ -1,8 +1,6 @@
 'use server'
 
 import { db, auth } from "@/firebase/admin";
-import { UserRecord } from "firebase-admin/auth";
-
 import { cookies } from "next/headers";
 
 const ONE_WEEK = 60 * 60 * 24 * 7;
@@ -114,6 +112,8 @@ export async function getCurrentUser() : Promise<User | null>{
 
   } catch (error){
     console.log(error)
+
+    return null;
   }
 }
 

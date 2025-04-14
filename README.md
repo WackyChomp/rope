@@ -24,6 +24,23 @@
 <br />
 
 
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#built-with">Built With</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <!--<li><a href="#"></a></li>-->
+    <!--<li><a href="#"></a></li>-->
+  </ol>
+</details>
+
+
+## About The Project
+AI is the all the rage these days. No better to get acclimated with this technology is to 
+
+
 <!-- BUILT WITH -->
 ## Built With
 Here are some frameworks/libraries used in this project:
