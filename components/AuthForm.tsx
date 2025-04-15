@@ -50,9 +50,9 @@ const AuthForm = ({ type }: { type: FormType }) => {
     try {
       if(type === 'sign-up'){
         const { name, email, password } = values;
-        const userCredentials = await createUserWithEmailAndPassword(auth, email, password)
+        const userCredential = await createUserWithEmailAndPassword(auth, email, password)
         const result = await signUp({
-          uid: userCredentials.user.uid,
+          uid: userCredential.user.uid,
           name: name!,
           email,
           password,
