@@ -4,9 +4,9 @@ import Agent from '@/components/Agent'
 const page = () => {
   return (
     <div>
-      <div className="">
+      <h3 className="text-center text-orange-400 mt-5">
         Interview Page
-      </div>
+      </h3>
       <Agent userName='You' userId='user1' type='generate' />
     </div>
   )

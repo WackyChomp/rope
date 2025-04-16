@@ -152,6 +152,17 @@
 }
 
 /* --------------------------------------------------------- */
+@layer base{
+  *{
+    @apply border-border outline-ring/50;
+  }
+  h2{
+    @apply text-3xl font-semibold;
+  }
+  h3{
+    @apply text-2xl font-semibold;
+  }
+}
 
 @layer components{
   .auth_layout{
@@ -200,17 +211,42 @@
     }
   }
 
+  
 
   .interviews-section{
     @apply bg-amber-900 p-5 flex flex-wrap gap-4 rounded-2xl max-lg:flex-col w-full items-stretch;
   }
-}
 
-.hover_tech_tooltip{
-  @apply text-green-500 bg-gray-900 absolute bottom-full mb-2 hidden group-hover:flex px-3 py-2 text-xs;
-}
 
+
+  .hover_tech_tooltip{
+    @apply text-green-500 bg-gray-900 absolute bottom-full mb-2 hidden group-hover:flex px-3 py-2 text-xs;
+  }
+
+
+
+  .interview_call_view{
+    @apply bg-red-400 flex sm:flex-row flex-col gap-10 items-center justify-between w-full;
+  }
+
+  .interviewer_card{
+    @apply flex_center flex-col gap-2 p-7 h-[500px] blue_gradient_dark rounded-lg border-2 border-gray-500 flex-1 sm:basis-1/2 w-full;
+  }
+
+  .avatar{
+    @apply z-10 flex items-center justify-center blue_gradient rounded-full size-[140px] relative;
+  }
+
+  .avatar_animate_speak{
+    @apply absolute inline-flex size-5/6 animate-ping rounded-full bg-pink-500 opacity-75;
+  }
+
+}
 /* --------------------------------------------------------- */
+
+@utility flex_center{
+  @apply flex items-center justify-center;
+}
 
 @utility pattern-one{
   @apply bg-[url('/pattern.svg')] bg-top bg-no-repeat;
@@ -232,4 +268,12 @@
 }
 @utility border_gradient {
   @apply bg-gradient-to-b from-[#4B4D4F] to-[#4B4D4F33];
+}
+
+@utility blue_gradient_dark {
+  @apply bg-gradient-to-b from-[#171532] to-[#08090D];
+}
+
+@utility blue_gradient {
+  @apply bg-gradient-to-l from-[#FFFFFF] to-[#CAC5FE];
 }
