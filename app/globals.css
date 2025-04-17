@@ -192,6 +192,12 @@
   .btn_primary{
     @apply w-fit !bg-primary-200 !text-dark-100 hover:bg-primary-200/90 !rounded-full !font-bold px-6 cursor-pointer min-h-10;
   }
+  .btn_call{
+    @apply inline-block px-7 py-3 font-bold text-sm leading-5 text-white transition-colors duration-150 bg-success-100 border border-transparent rounded-full shadow-sm focus:outline-none focus:shadow-2xl active:bg-success-200 hover:bg-success-200 min-w-28 cursor-pointer items-center justify-center overflow-visible;
+  }
+  .btn_disconnect{
+    @apply inline-block px-6 py-4 text-sm font-bold leading-5 text-white transition-colors duration-150 bg-destructive-100 border border-transparent rounded-full shadow-sm focus:outline-none focus:shadow-2xl active:bg-destructive-200 hover:bg-destructive-200 min-w-28 cursor-pointer;
+  }
 
   /* .btn_{
     @apply 
@@ -239,6 +245,9 @@
 
   .avatar_animate_speak{
     @apply absolute inline-flex size-5/6 animate-ping rounded-full bg-pink-500 opacity-75;
+  }
+  .avatar_card_content{
+    @apply flex flex-col gap-2 justify-center items-center p-8 dark_gradient rounded-2xl min-h-full;
   }
 
 }

@@ -2,6 +2,12 @@
 
 type FormType = 'sign-in' | 'sign-up'
 
+interface AgentProps{
+  userName: string;
+  userId?: string;
+  type: 'generate' | 'interview';
+}
+
 interface TechIconProps{
   techStack: string[]
 }
