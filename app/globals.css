@@ -182,9 +182,7 @@
   .card{
     @apply bg-green-500 rounded-2xl min-h-full;
   }
-  .card_border{ 
-    @apply border_gradient p-0.5 rounded-2xl w-fit;
-  }
+
   .card_interview{ 
     @apply dark_gradient rounded-2xl min-h-full flex flex-col justify-between gap-10 p-6 relative overflow-hidden;
   }
@@ -231,12 +229,16 @@
 
 
 
+
   .interview_call_view{
-    @apply bg-red-400 flex sm:flex-row flex-col gap-10 items-center justify-between w-full;
+    @apply bg-red-400 flex sm:flex-row flex-col gap-10 items-center justify-between w-full rounded-2xl;
   }
 
   .interviewer_card{
-    @apply flex_center flex-col gap-2 p-7 h-[500px] blue_gradient_dark rounded-lg border-2 border-gray-500 flex-1 sm:basis-1/2 w-full;
+    @apply flex_center flex-col gap-2 p-7 h-[500px] blue_gradient_dark rounded-2xl border-2 border-gray-500 flex-1 sm:basis-1/2 w-full;
+  }
+  .your_card_border{ 
+    @apply border_gradient p-0.5 rounded-2xl flex-1 sm:basis-1/2 w-full h-[500px] max-md:hidden;
   }
 
   .avatar{
@@ -248,6 +250,13 @@
   }
   .avatar_card_content{
     @apply flex flex-col gap-2 justify-center items-center p-8 dark_gradient rounded-2xl min-h-full;
+  }
+
+  .transcript_border{
+    @apply border_gradient p-0.5 rounded-2xl w-full;
+  }
+  .transcript{
+    @apply dark_gradient rounded-2xl min-h-12 px-5 py-5 flex items-center justify-center;
   }
 
 }
@@ -262,6 +271,10 @@
 }
 @utility pattern-two{
   @apply bg-[url('https://media.tenor.com/eqsvEtsUXlMAAAAi/stalzone-stalfos.gif')] bg-top bg-no-repeat;
+}
+
+@utility border_gradient{
+  @apply bg-gradient-to-b from-[#4B4D4F] to-[#4B4D4F33];
 }
 
 @utility dark_gradient {

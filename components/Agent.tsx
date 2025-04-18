@@ -16,6 +16,14 @@ const Agent = ({ userName, userId, type } : AgentProps ) => {
   const callStatus = CallStatus.ACTIVE;
   const isSpeaking = true;
 
+  const mockMessages = [
+    'Please recite your purpose',
+    `Sure thing bucko! Since you've selected the fitness agent, I shall proceed: 
+    The FitnessGram PACER Test is a multistage aerobic capacity test that progressively gets more difficult as it continues`
+  ]
+  const lastMockMessage = mockMessages[mockMessages.length - 1];
+
+
   return (
     <>
       <div className='interview_call_view'>
@@ -35,7 +43,7 @@ const Agent = ({ userName, userId, type } : AgentProps ) => {
         </div>
 
         {/* User */}
-        <div className="card_border">
+        <div className="your_card_border">
           <div className="avatar_card_content">
             <Image 
               src={userIcon}
@@ -47,6 +55,19 @@ const Agent = ({ userName, userId, type } : AgentProps ) => {
             <h3>{userName}</h3>
           </div>
         </div>
+      </div>
+
+      {/* Transcript of speaker */}
+      <div className="mt-5">
+        {mockMessages.length > 0 && (
+          <div className="transcript_border">
+            <div className="transcript">
+              <p key={lastMockMessage} className={cn('transition-opacity duration-500 opacity-0', 'text-lg text-center text-white animate-fadeIn opacity-100')}>
+                {lastMockMessage}
+              </p>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Button for call status */}
