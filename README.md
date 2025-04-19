@@ -8,7 +8,7 @@
   <h3 align="center">Rope</h3>
 
   <p align="center">
-    Platform to refine communicating your expertise
+    Platform to refine communicating your expertise with confidence
     <br />
     <br />
     <a href="https://github.com/WackyChomp/rope"><strong>Explore the docs »</strong></a>
@@ -38,7 +38,11 @@
 
 
 ## About The Project
-AI is the all the rage these days. No better to get acclimated with this technology is to 
+AI is the all the rage these days. No better way to get acclimated with this technology is to dive into the deep and immerse yourself. 
+
+Progress in AI is inevitable and exponential so it's best to ride the learning curve. As a result, intertwining AI technology with our personal experiences help accelerates our personal growth!
+
+Look no further with, <b><u>Rising of Professional Experts (R.O.P.E)</u></b>
 
 
 <!-- BUILT WITH -->
@@ -49,6 +53,7 @@ Here are some frameworks/libraries used in this project:
 * [![React][React.js]][React-url]
 * [![Next][Next.js]][Next-url]
 * [![Firebase][Firebase]][Firebase-url]
+* ![Gemini-API][Gemini-API]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -70,7 +75,7 @@ List of incredible resources that give you inspiration or point you into a direc
 * [Shadcn/ui](https://ui.shadcn.com/docs) - Customizable UI components
 * [Tailwind CSS](https://tailwindcss.com/docs/installation) - CSS framework
 * [Firebase](https://firebase.google.com/) - Backend service
-
+* [Google AI Studio](https://aistudio.google.com/welcome) - documentation for Gemini API
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -86,3 +91,5 @@ List of incredible resources that give you inspiration or point you into a direc
 
 [Firebase]: https://img.shields.io/badge/Firebase-%23FF6600.svg?style=for-the-badge&logo=firebase&logoColor=white
 [Firebase-url]: https://firebase.google.com/
+[Gemini-API]: https://img.shields.io/badge/Gemini-055B79?style=for-the-badge&logo=googlegemini&logoColor=white
+Gemini-url: https://aistudio.google.com/welcome
