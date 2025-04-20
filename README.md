@@ -40,7 +40,7 @@
 ## About The Project
 AI is the all the rage these days. No better way to get acclimated with this technology is to dive into the deep and immerse yourself. 
 
-Progress in AI is inevitable and exponential so it's best to ride the learning curve. As a result, intertwining AI technology with our personal experiences help accelerates our personal growth!
+Progress in AI is inevitable and exponential so it's best to ride the learning curve. As a result, intertwining AI technology with our personal experiences will help accelerate our personal growth!
 
 Look no further with, <b><u>Rising of Professional Experts (R.O.P.E)</u></b>
 
@@ -79,6 +79,8 @@ List of incredible resources that give you inspiration or point you into a direc
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+
+<!-- Badges and URLs -->
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [TypeScript]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
@@ -92,4 +94,4 @@ List of incredible resources that give you inspiration or point you into a direc
 [Firebase]: https://img.shields.io/badge/Firebase-%23FF6600.svg?style=for-the-badge&logo=firebase&logoColor=white
 [Firebase-url]: https://firebase.google.com/
 [Gemini-API]: https://img.shields.io/badge/Gemini-055B79?style=for-the-badge&logo=googlegemini&logoColor=white
-Gemini-url: https://aistudio.google.com/welcome
+[Gemini-url]: https://aistudio.google.com/welcome
